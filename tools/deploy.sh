@@ -119,6 +119,7 @@ deploy() {
 main() {
   init
   build
+  # 아래의 이 명령어 때문에 이틀을 날림.
   # test
   resume_site_dir
 
