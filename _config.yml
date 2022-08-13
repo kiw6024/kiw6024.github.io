@@ -25,7 +25,7 @@ timezone:
 title: K I W 6 0 2 4
 
 # Sub-Title
-tagline: 안녕하세요, KIW6024입니다. \n Hello, It's KIW6024.
+tagline: 안녕하세요, こんにちは, 你好, HELLO
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -45,9 +45,8 @@ social:
   name: KIM TAEHYUN
   email: kiw6024@gmail.com             # change to your email address
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/kiw6024
+    - https://github.com/kiw6024
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
