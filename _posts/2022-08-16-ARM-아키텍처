@@ -1,0 +1,38 @@
+---
+title:  "모바일 기기에 들어가는 ARM 아키텍처"
+excerpt: "스마트폰에 근 2~3년 사이 들어간 CPU 코어에 대한 간단한 정리 겸 리뷰"
+
+categories:
+  - 전자기계<Electronic Devices>
+tags:
+  - [ARM, AP, SoC, 스마트폰, 스마트폰 프로세서]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-08-16
+last_modified_at: 2022-08-16
+---
+
+모바일 시장은 스마트폰이 큰 지분을 갖고 있다.
+
+스마트폰 시장은 다시 운영체제에 따라 구글의 Android와 애플의 iOS 진영으로 나뉘게 되는데,
+
+언젠가부터 Android진영의 기기가 iOS 기기에 비해 퍼포먼스가 뒤처지기 시작하더니, 양 진영의 성능차는 오늘날 1년, 2년을 넘어 심하게는 3년까지 뒤처지는 모습을 보이고 있다.
+말인즉, 
+
+더구나 2021년에 들어서서는 안드로이드 기기들의 발열 또한 문제가 되면서 
+
+
+인용할 것 :
+"It all comes down to what you're trying to accomplish," Carmack said. "I'll tell you where one big core versus two wins: when your goal is to win a single-threaded benchmark. You throw as many gates as possible at the one big core to win a single-threaded benchmark... If you want responsiveness, the quickest way to get that, and the most efficient way to get high-performance, is probably two big cores."
+
+
+
+https://www.clien.net/service/board/news/16623567
+
+구글 텐서 칩 : 구글 실리콘의 부사장&총책임자인 Phil Carmack과 선임이사인 Monika Gupta의 인터뷰
+https://arstechnica.com/gadgets/2021/10/the-google-silicon-team-gives-us-a-tour-of-the-pixel-6s-tensor-soc/
+
+ARM 아키텍처 배경지식
+https://www.dongs.kr/post_arm.html
