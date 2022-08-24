@@ -1,11 +1,10 @@
 ---
 title:  "CPU의 구조와 동작원리 이해하기"
-excerpt: "CPU는 어떻게 동작할까"
 
 categories:
   - 전자기계
 tags:
-  - [Arm, ARM, AP, SoC, 스마트폰, 스마트폰 프로세서]
+  - [Arm, AP, SoC, 스마트폰, 스마트폰 프로세서]
 
 toc: true
 toc_sticky: true
