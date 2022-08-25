@@ -16,6 +16,40 @@ last_modified_at: 2022-08-24
 
 어플리케이션의 실행 부분과 데이터 저장 부분이 분리되어 있다.
 
+![AndroidStructure](https://user-images.githubusercontent.com/96360829/186425674-00514200-7b4c-4f1b-be54-72c8f303022d.png)
+
+- manifests
+- java
+- res
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3>MainActivity.java</h3>
 - main함수와 같은 존재로, 안드로이드 어플리케이션의 주요 실행 코드가 이곳에 작성된다.
 
