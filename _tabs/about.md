@@ -9,7 +9,7 @@ order: 4
         - 기초 프로그래밍
             - Python
         - 게임 프로그래밍
-            - C#
+            - C#(Unity 3D)
         - 웹 프로그래밍
             - HTML, CSS, JS 삼총사
         - 기타 마크다운
