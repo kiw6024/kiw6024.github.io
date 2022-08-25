@@ -24,3 +24,6 @@ order: 4
 - 취미
     - 그림
     - 사진
+
+
+e-mail : kiw6024@gmail.com
