@@ -31,6 +31,24 @@ a = [1, 2, 3]
 
 <h1>yield</h1>
 
+<h1>List Comprehension</h1>
+
+다음 두 코드는 완벽히 동일하게 동작한다.
+
+```
+y = []
+
+for mile in range(0, 5):
+  y.append(mile)
+```
+
+```
+y = [mile for mile in range(0, 5)]
+```
+
+후자가 리스트 컴프리헨션이다.
+
+<h1></h1>
 
 ---
 
