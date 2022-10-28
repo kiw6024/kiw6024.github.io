@@ -1,0 +1,190 @@
+---
+title:  "네트워크"
+
+categories:
+  - 네트워크
+tags:
+  - [네트워크]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-10-07
+last_modified_at: 2022-10-07
+---
+
+<h1>주의! 아직 작성중인 글입니다.</h1>
+
+---
+
+<h1><b>네트워크</b></h1>
+
+---
+
+<h3><b>기본 개념</b></h3>
+
+<h5><b>Inter-net</b></h5>
+단체간의 네트워크가 연결이 되어 있는 것을 인터넷이라고 부른다.  
+인터넷은 프로토콜로 TCP/IP를 사용한다.  
+
+<h5><b>Intra-net && Extra-net</b></h5>
+단체에서 인가된 사람들만 사용할 수 있는 네트워크를 인트라넷,  
+나아가 단체와 관련된 사람들(협력사, 고객사 등)까지 사용할 수 있는 네트워크를 엑스트라넷이라고 부른다.  
+
+
+
+<h5><b>LAN, LocalAreaNetwork</b></h5>
+근거리 네트워크
+
+<h5><b>BN, BackboneNetwork</b></h5>
+
+<h5><b>MAN, MetropolitianAreaNetwork</b></h5>
+
+<h5><b>WAN, WideAreaNetwork</b></h5>
+장거리 네트워크
+
+
+
+<h5><b>Node && Link</b></h5>
+네트워크에 연결된 각각의 디바이스를 노드라고 하며, 각 노드는 링크로 연결되어 있다.  
+
+<h5><b>Packetizing && Routing</b></h5>
+메시지를 통신에 유리하도록 고정된 단위인 패킷으로 나누는 과정을 패키지화라고 부르고, 메시지가 전달되기 위한 최적의 경로를 찾는 과정을 라우팅이라고 한다.  
+
+---
+
+<h3><b>구성 요소</b></h3>
+
+<h5><b>Sender && Reciever</b></h5>
+데이터를 보내는 쪽은 Sender, 받는 쪽은 Reciever
+
+<h5><b>OSI 7 Layer</b></h5>
+통신이 일어나는 7단계로, 국제표준화기구가 정립했다. 다음과 같이 구성되어 있다.  
+
+- 7 Layer : Application
+- 6 Layer : Presejtation
+- 5 Layer : Session
+- 4 Layer : Transport
+- 3 Layer : Network
+- 2 Layer : Data Link (MAC)
+- 1 Layer : Physical  
+
+각 계층은 독립되어 있으며 상하구조를 가진다.
+
+---
+
+<h3><b>Signal</b></h3>
+
+<h5><b>사전지식</b></h5>
+진동수가 큰 전자기파는 대기에 의해 쉽게 산란된다. 때문에,  
+더 멀리 떨어져 있는 공간과 네트워크를 연결하고 싶다면, 파장이 긴 전자기파를 이용할 필요가 있다.  
+라디오파의 진동수가 매우 작은 이유이고, km 단위의 먼 장거리 통신이 라디오파로 가능한 이유이다.  
+
+<h5><b>아날로그와 디지털</b></h5>
+시간에 대해 연속적인 것을 아날로그, 불연속적인 것을 디지털이라고 부른다.  
+<!--작은 글씨로--> 시간에 대해 연속적이라는 것은 XY 중 한 축을 시간으로 두었을 때 값이 끊기지 않게 나온다는 이야기.  
+
+"An Aperiodic or NOn-Periodic signla is the one that changes constantly without exhibiting a pattern or cycle that repeats over time"  
+"푸리에 변환"  
+"8바이트는 1비트"  
+
+Sender는 1비트(=8바이트)씩 데이터를 송신하는데,  
+Sender와 Reviever 사이 채널이 8개라면, 1채널당 1개의 바이트를 전송하면 된다. 이 경우를 병렬(Parallel) 통신이라고 한다.  
+그러나 Sender와 Reciever 1채널당 8개의 바이트를 전송하면, 채널을 1개만으로 구성해도 무방하다. 이 경우를 직렬(Serial) 통신이라고 한다.  
+
+실제로는 주로 후자의 경우로 통신체계가 구축된다.  
+
+<h5><b>Asynchronous Trasmission</b></h5>
+비동기식 직렬 통신에서 1비트의 앞뒤에는 Stop bit와 Start bit가 붙는다.
+
+<h5><b>Synchronous Transmission</b></h5>
+동기식 직렬 통신에는 Stop bit와 Start bit가 붙지 않는다. 시간이 매우 중요하기 때문이다.  
+
+Ex) 온라인 게임
+
+<h5><b>Transmission media</b></h5>
+- Guided Media (물리적인 경로 有)
+  - twisted-pair cable
+  - coaxial cable 
+  - fiver-optic cable
+- Unguided Media (물리적인 경로 無)
+
+- Unshielded Twisted Pair Cable
+  - 케이블을 꼬는 것은 노이즈로부터의 손실을 보호하기 위해서이다.
+  - 그럼에도 불구하고 절연체로 감싸져 있지 않기 때문에, 주변 환경에서 발생하는 노이즈로부터 영향을 받을 수 있고, 때로는 데이터 손실이 발생하기도 한다.  
+
+  - 그럼에도 UTP를 쓰는 이유 : 우선 가격이 싸고, 설치하기도 사용하기 편함  
+
+- Coaxial Cable
+  - 동축 케이블
+
+- Fiber-Optic Cable
+  - 물리 1에서 배웠던 그 광통신! 이 여기서 나오네
+
+---
+
+- 10월 14일자 수업
+
+- 전파(Propagation)의 유형
+  - 지구의 지면을 타고 전달되는 유형 [VLF, LF]
+  - 대류권을 통해 전달되는 유형 [MF]
+  - 이온층(Ionosphere)에서 레이저가 반사되어 전달되는 유형 [HF]
+  - 서로 직선으로 바라보며 전달되는 유형(Line-Of-Sight, Broadcast) [VHF, UHF]
+  - 아예 우주 밖의 물체와 통신하기 위한 유형 [SHF, EHF]
+
+- 전파에서 중요한 요소
+  - 전파가 쏴지는 (Sender 안테나의) 위치
+  - 전파가 반사되는 위치
+    - 매질 밀도의 차이가 라디오파가 반사될 수 있게 한다.
+  - 전파가 도달하는 (Reviever 안테나의) 위치
+
+
+
+- 라디오파 할당법  
+  - 라디오파는 8개의 범위로 나뉘어지며, B A N D S라고 불림.  
+  - B A N D S : [VLF, LF, MF, HF, VHF, UHF, SHF, EHF]  
+
+- VLF (Very Low Frequency)  
+  - Do not suffer much attenuation in TX but are susceptible to high levels of atmospheric noise I.e. electricity and heat  
+  - 개 긴 장거리 통신에서 사용함. 잠수함에서 사용됨.  
+
+- MF (Middle Frequency)  
+  - 이온층에 흡수된다. (아침엔 더 많이 흡수됨)  
+  - AM 라디오에 사용된다.  
+
+- HF (Hight Frequency)  
+  - 이온층에 반사되어 도달한다.  
+  - 국제 방송, 군 통신, 전화, 팩스 등에 사용한다.  
+
+- EHF (Extremly High Frequency)
+  - 전투기 등의 레이더, 위성과 같이 실험적인 물건이 사용한다.
+  - 전투기를 재밍하면, 정보를 끊을 수 있고, 파일럿은 고립된다. 라고 교수가 말하는데, 이거 진짜인가? 무언가를 가장한 말인가?
+
+- 나머지는 별로 중요하지 않나, 금방금방 넘어감.  
+
+
+
+- 정보통신을 방해하는 요소  
+  - Attenuation : 감쇠  
+    - 에너지를 잃는 현상임  
+    - 매체의 저항을 극복(overcome)하는 과정 속에서 에너지를 잃음  
+      - 이것은 작동중인 케이블이 따듯한 이유임(열E로 전환됨)  
+    - 이것을 타협??(compensate)하기 위해 Amplifier가 사용됨  
+
+  - Distortion : 왜곡  
+    - 신호의 형태나 모양 자체가 바뀌는 현상임  
+    - 신호가 Composite(합성)되어 전달되는 경우가 있는데, 그 기저가 되는 신호 중 하나만 영향을 받아도 결과적인 맵시가 변함.  
+    - 전화나 무전 등에서 치지직 거리고 목소리 높낮이, 톤 등이 변하는 현상이 이것임!  
+
+  - Noise : 노이즈  
+    - wire(와이어)의 전자가 의도와 다르게 랜덤하게 움직이는 것이 원인임.  
+    - 유형  
+      - Induced Noise  
+        - Comes from sources like Motors and Appliances  
+      - Crosstalk  
+        - 다른 와이어에서 오는 원치 않는 영향을 뜻함
+      - Impulse Noise  
+        - Spike (A signal with high energy in a very short period of time) that comes from power lines, lightening etc,.  
+
+- Shannon Capacity
+  - 이건 직접 찾아서 공부하자. 텍스트로 옮겨 적을 수 있는 내용이 아닌듯.
