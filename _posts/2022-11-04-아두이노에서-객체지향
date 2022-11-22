@@ -1,0 +1,85 @@
+---
+title:  "아두이노에서 객체지향 응용하기"
+
+categories: 프로그래밍/기타
+  - 
+tags:
+  - [아두이노, 객체지향, 프로그래밍]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-11-04
+last_modified_at: 2022-11-04
+---
+
+<h1>주의! 아직 작성중인 글입니다.</h1>
+
+---
+
+<h1>아두이노에서 객체지향 응용하기</h1>
+
+
+<h4>아두이노의 언어는 C++</h4>
+C++을 처음 다루어 봤기에 이것이 정확한 정보인지는 모르겠으나, 다른 객체지향 언어와 C++가 가장 큰 차이점을 보이는 점은 C++는 클래스(.cpp) 안에서 변수와 함수를 정의하고, 헤더(.h) 파일에서 변수와 함수에 대한 세부사항을 따로 작성한다는 것이다.
+
+형식은 다음과 같았다.
+
+<h4>예시 코드</h4>
+
+<b>Arduino_OOP.ino</b>
+
+```
+void setup()
+{
+    ...
+}
+
+void loop()
+{
+    Money = MainFunctions.AddOneHundreadWon(Money);
+}
+```
+
+
+<b>MainFunctions.cpp</b>
+
+```
+#include "Arduino.h"
+
+class MainFunctions
+{
+  public:
+    AddFiftyWon(int Money);
+    AddOneHundreadWon(int Money);
+    AddFiveHundreadWon(int Money);
+};
+```
+
+<b>MainFunctions.h</b>
+
+```
+#include "Arduino.h"
+#include "MainFunctions.h"
+
+int MainFunctions::AddFiftyWon(int Money)
+{
+  Money += 500;
+  return Money;
+}
+
+int MainFunctions::AddOneHundreadWon(int Money)
+{
+  Money += 1000;
+  return Money;
+}
+
+int MainFunctions::AddFiveHundreadWon(int Money)
+{
+  Money += 2000;
+  return Money;
+}
+```
+
+---
+<h1>참고</h1>
