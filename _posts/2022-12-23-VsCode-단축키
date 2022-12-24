@@ -1,0 +1,25 @@
+---
+title:  "비주얼 스튜디오 코드"
+
+categories:
+  - 
+tags:
+  - []
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-12-23
+last_modified_at: 2022-12-23
+---
+
+- 함수 찾아가기 : Ctrl + 좌클릭
+
+- 커맨드 입력창 열기 : Ctrl + Shift + `
+
+- 인터프리터 언어 선택 : Ctrl + Shift + P
+
+
+
+---
+<h1>참고</h1>
