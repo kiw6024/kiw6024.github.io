@@ -19,7 +19,7 @@ last_modified_at: 2022-09-19
 
 <h1>HTML 작성법</h1>
 
-```
+```html
 <head>
 ...
 </head>
@@ -27,7 +27,7 @@ last_modified_at: 2022-09-19
 
 이 란에서는 중요한 정보를 적는다.
 
-```
+```html
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content=""width=device-width, initial-scale="1.0">
@@ -37,7 +37,7 @@ last_modified_at: 2022-09-19
 
 ---
 
-```
+```html
 <body>
 ...
 </body>
