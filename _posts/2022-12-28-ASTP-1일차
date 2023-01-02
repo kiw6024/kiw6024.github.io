@@ -1,0 +1,25 @@
+---
+title:  "ASTP 1일차"
+
+categories:
+  - 
+tags:
+  - []
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-12-28
+last_modified_at: 2022-12-28
+---
+
+<h1>목적 : Android Studio로 한국투자증권 API 사용한 주식 자동 트레이딩 만들기</h1>
+
+(https://www.truefriend.com/main/customer/systemdown/OpenAPI.jsp?cmd=TF04ea01200)[한국투자증권 API 및 예제]란에서 eFriend Expert(Open API)와 개발설명서, 그리고 샘플을 받았다.
+
+- build.grandle 수정
+
+---
+<h1>참고</h1>
+
+(티스토리 블로그)[https://stockant.tistory.com/343]

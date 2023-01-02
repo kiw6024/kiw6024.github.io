@@ -1,0 +1,83 @@
+---
+title:  "Git 사용"
+
+categories:
+  - git
+tags:
+  - [git]
+
+toc: true
+toc_sticky: true
+ 
+date: 2022-12-31
+last_modified_at: 2022-12-31
+---
+
+<h1>주의! 아직 작성중인 글입니다.</h1>
+
+---
+
+<h4>깃헙</h4>
+- 팀플에 초점이 맞춰져 있는 기능들이 몇 가지 있음
+
+---
+
+<h1>개념</h1>
+
+<h4>Git-flow</h4>
+
+![image](https://user-images.githubusercontent.com/96360829/210164939-230ae29c-3160-4d85-a38c-94901b7a5846.png)
+
+<h4>Repository</h4>
+  - Upstream Remote Repository
+  - Origin Remote Repository
+  - Local Repository
+
+<h4>branch</h4>
+  - branch - commit간의 관계는 class - function간의 관계를 연상하는 부분이 있음
+
+---
+
+<h1>명령어</h1>
+
+<h4>git init</h4>
+  - 디렉토리를 빈 Git 저장소로 만드는 작업
+
+```bash
+git init
+```
+
+<h4>브랜치 추가</h4>
+```bash
+git branch 브랜치명
+```
+
+<h4>브랜치 삭제</h4>
+```bash
+git branch -d 브랜치명
+```
+
+<h4>추가</h4>
+```bash
+git add .
+```
+
+<h4>커밋</h4>
+```bash
+git commit -m "commit message"
+```
+
+<h4>푸시</h4>
+```
+git push origin main
+git push -u origin +main
+```
+
+---
+
+<h4>기타</h4>
+  - README.md 파일 수정을 통해 대문 화면을 꾸밀 수 있다.
+  - 마크다운 언어를 사용한다.
+
+---
+<h1>참고</h1>
